@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenPass</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Генератор Пароля</h1>
+      <p class="decription">
+        Для создания пароля заполните форму и нажмите кнопку "Сгенерировать".
+      </p>
+
+      <div class="wrapper">
+        <form class="form">
+          <label class="form__label"
+            >Цифры:
+            <input
+              class="form__checkbox"
+              id="number"
+              type="checkbox"
+              checked="checked"
+            />
+          </label>
+          <label class="form__label"
+            >Прописные буквы:
+            <input
+              class="form__checkbox"
+              id="lowCaseLetter"
+              type="checkbox"
+              checked="checked"
+            />
+          </label>
+          <label class="form__label"
+            >Спец. символы:
+            <input class="form__checkbox" id="specChar" type="checkbox" />
+          </label>
+          <label class="form__label"
+            >Количество символов:
+            <input class="form__input" type="number" value="8" />
+          </label>
+          <button class="form__btn">Сгенерировать</button>
+        </form>
+        <div class="content">
+          <input class="content__outputText" type="text" disabled />
+          <button class="content__copyText">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
